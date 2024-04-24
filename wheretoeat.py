@@ -4,6 +4,7 @@ from tkinter import *
 fenster = Tk()
 fenster.title("Die magische Essmuschel")
 fenster.geometry("310x200")
+fenster.resizable(width=False, height=False)
 
 def button_action():
     answer = randomise()
@@ -27,7 +28,7 @@ def randomise():
 
     return answer
 
-Lokale = ["China Man", "Döner Jude", "McDreck", "Subway", "Pizza"]
+Lokale = ["China Man", "Döner Jude", "McDreck", "Subway", "Pizzabomber"]
 
 
 ### tkinter GUI-Aufbau
