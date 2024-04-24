@@ -3,13 +3,14 @@ from tkinter import *
 
 fenster = Tk()
 fenster.title("Die magische Essmuschel")
-fenster.geometry("310x200")
+fenster.geometry("300x200")
 fenster.resizable(width=False, height=False)
+fenster.config(background="lightblue")
 
 def button_action():
     answer = randomise()
     anweisungs_label.config(text="Heute gehts zum:\n\
-    " + answer)
+    " + answer,background="lightgreen")
 
 def randomise():
     answer = ""
